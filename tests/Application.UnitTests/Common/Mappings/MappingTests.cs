@@ -1,10 +1,12 @@
 ﻿using System.Runtime.Serialization;
+
 using AutoMapper;
+using NUnit.Framework;
+
 using CleanArchitecture.Application.Common.Mappings;
 using CleanArchitecture.Application.Common.Models;
 using CleanArchitecture.Application.TodoLists.Queries.GetTodos;
 using CleanArchitecture.Domain.Entities;
-using NUnit.Framework;
 
 namespace CleanArchitecture.Application.UnitTests.Common.Mappings;
 
@@ -39,7 +41,7 @@ public class MappingTests
         _mapper.Map(instance, source, destination);
     }
 
-    private object GetInstanceOf(Type type)
+    private static object GetInstanceOf(Type type)
     {
         if (type.GetConstructor(Type.EmptyTypes) != null)
             return Activator.CreateInstance(type)!;
