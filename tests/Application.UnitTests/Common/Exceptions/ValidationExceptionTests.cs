@@ -1,7 +1,8 @@
-﻿using CleanArchitecture.Application.Common.Exceptions;
-using FluentAssertions;
+﻿using FluentAssertions;
 using FluentValidation.Results;
 using NUnit.Framework;
+
+using CleanArchitecture.Application.Common.Exceptions;
 
 namespace CleanArchitecture.Application.UnitTests.Common.Exceptions;
 
