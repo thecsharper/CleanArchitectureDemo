@@ -1,5 +1,6 @@
-﻿using CleanArchitecture.Application.WeatherForecasts.Queries.GetWeatherForecasts;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+
+using CleanArchitecture.Application.WeatherForecasts.Queries.GetWeatherForecasts;
 
 namespace CleanArchitecture.WebUI.Controllers;
 
