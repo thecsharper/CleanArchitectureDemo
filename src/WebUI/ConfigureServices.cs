@@ -1,10 +1,11 @@
-﻿using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Infrastructure.Persistence;
-using CleanArchitecture.WebUI.Services;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using NSwag;
 using NSwag.Generation.Processors.Security;
 using ZymLabs.NSwag.FluentValidation;
+
+using CleanArchitecture.Application.Common.Interfaces;
+using CleanArchitecture.Infrastructure.Persistence;
+using CleanArchitecture.WebUI.Services;
 
 namespace Microsoft.Extensions.DependencyInjection;
 
@@ -18,8 +19,7 @@ public static class ConfigureServices
 
         services.AddHttpContextAccessor();
 
-        services.AddHealthChecks()
-            .AddDbContextCheck<ApplicationDbContext>();
+        services.AddHealthChecks().AddDbContextCheck<ApplicationDbContext>();
 
         services.AddControllersWithViews();
 
