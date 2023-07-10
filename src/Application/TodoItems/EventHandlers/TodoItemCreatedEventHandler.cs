@@ -1,6 +1,8 @@
-﻿using CleanArchitecture.Domain.Events;
+﻿using Microsoft.Extensions.Logging;
+
 using MediatR;
-using Microsoft.Extensions.Logging;
+
+using CleanArchitecture.Domain.Events;
 
 namespace CleanArchitecture.Application.TodoItems.EventHandlers;
 
